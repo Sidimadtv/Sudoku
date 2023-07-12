@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="m-gold-s.png" type="image/png" />
+        <title>movies</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="tab">
+                <button
+                    id="defaultOpen"
+                    class="tablinks"
+                    onclick="tabSelector(event, 'mySearch')"
+                >
+                    Movie Search
+                </button>
+                <button
+                    class="tablinks"
+                    onclick="tabSelector(event, 'myFavorites')"
+                >
+                    My Favorites
+                </button>
+            </div>
+            <!-- <h2>Movie Search</h2> -->
+            <div id="mySearch" class="tabcontent">
+                <div class="movie-search">
+                    <input
+                        type="text"
+                        id="movieSearch"
+                        class="movie-search__input"
+                        placeholder="Type a movie name here"
+                    />
+                    <button
+                        id="movieSearchBtn"
+                        class="movie-search__btn"
+                    ></button>
+                </div>
+
+                <ul id="searchResult" class="search-result"></ul>
+            </div>
+
+            <!-- <h2>My Favorites</h2> -->
+            <div id="myFavorites" class="tabcontent">
+                <ul id="myFavoritesList" class="my-favorites-list"></ul>
+            </div>
+
+            <div id="cardPopUp" class="card-popup">
+                <div id="cardPopUpContent" class="card-popup-content">
+                    <div class="card-popup__buttons-wrapper">
+                        <button
+                            id="cardPopUpReturnBtn"
+                            class="card-popup__return-btn"
+                        ></button>
+                        <button
+                            id="cardPopUpAddFavorBtn"
+                            class="card-popup__add-favor-btn"
+                        ></button>
+                    </div>
+                    <span id="cardDetails"></span>
+                </div>
+            </div>
+        </div>
+        <script src="key.js"></script>
+        <!-- set script as 'module' to import data -->
+        <script type="module" src="movies.js"></script>
+        <script src="tabselector.js"></script>
+    </body>
+</html>
