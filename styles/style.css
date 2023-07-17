@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    text-align: center;
+}
+
+.picture {
+    display: none;
+}
+
+
+.caption {
+    width: auto;
+    height: auto;
+}
+
+.empty-el {
+    color: #4848d4;
+}
+
+
+.paused {
+    background-color: purple;
+}
+
+.suduko-app {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.invalid {
+    color: red;
+    border: 2px red solid;
+    margin: 0;
+}
+
+.puzzle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    display: block;
+    width: 80vmin;
+    height: 80vmin;
+
+}
+
+.puzzle input {
+    text-align: center;
+    font-size: 6vmin;
+    width: 8vmin;
+    height: 8vmin;
+    border: 1px #000000 solid;
+    margin: 0;
+}
+
+.puzzle input:focus {
+    background-color: #88c1f9;
+}
+
+ .odd-section {
+    background: #b3b3b39b;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    table-layout: fixed;
+    width: 99vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+li {
+    vertical-align: middle;
+    float: left;
+    text-align: center;
+}
+
+
+li a, .dropbtn {
+    transform: scale();
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 1.5vh 2vw;
+    text-decoration: none;
+    border-right: 1px solid grey;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+    padding: 1.6vh 2vw;
+}
+
+li.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    display: block;
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 1.8vw;
+    object-fit: contain;
+
+}
+
+.active {
+    background-color: #04aa6d;
+}
+
+
+.digit {
+    font-size: 3vw;
+    color: pink;
+}
+
+.txt {
+    font-size: 2vw;
+    color: pink;
+}
+
+.hidden{
+    display: none;
+}
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  bottom: 2vh;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .puzzle input {
+        text-align: center;
+        font-size: 3vmin;
+        width: 5vmin;
+        height: 5vmin;
+        border: 1px #000000 solid;
+        margin: 0;
+    }
+
+    ul{
+        width: 100vw;
+        font-size: 2vw;
+    }
+
+    .digit {
+        font-size: 2vw;
+        color: pink;
+    }
+    
+    .txt {
+        font-size: 1vw;
+        color: pink;
+    }
+
+    .button-17{
+        top: 5vh;
+    }
+}
+
